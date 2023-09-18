@@ -12,6 +12,7 @@ html {
   min-height: 100vmin;
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 .container {
   display: flex;

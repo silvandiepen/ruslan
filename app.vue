@@ -129,11 +129,12 @@ onMounted(() => {
 }
 body,
 html {
-  width: 100%;
+  width: 100vw;
   min-height: 100vmin;
   margin: 0;
   padding: 0;
   background-color: black;
+  overflow: hidden;
 }
 .container {
   display: flex;

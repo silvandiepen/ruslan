@@ -102,14 +102,19 @@ useHead({
 
 const isVisible = ref(0);
 
-const showVersions = ()=>{
+const showVersions = () => {
   setInterval(() => {
     let newValue = isVisible.value + 1;
     if (newValue > 2) newValue = 0;
     isVisible.value = newValue;
   }, 3000);
-}
+};
 
+onMounted(() => {
+  addEventListener("DOMContentLoaded", (event) => {
+    showVersions;
+  });
+});
 </script>
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");

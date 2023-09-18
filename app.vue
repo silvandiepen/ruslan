@@ -29,11 +29,11 @@ h1 {
   font-family: "Paytone One", sans-serif;
   font-size: calc(4vw + 1.5em);
   line-height: 0.8;
-      animation: whole 0.8s ease-in-out forwards;
+  animation: whole 0.8s ease-in-out forwards;
 
   span {
     display: block;
-  opacity: 0;
+    opacity: 0;
   }
   span:first-child {
     animation: first 0.5s ease-in-out forwards;

@@ -4,7 +4,7 @@
       <span>Ruslan</span><span>Gazaryan</span>
     </h1>
     <h1 v-if="isVisible === 1" class="hy">
-      <span>Ռուսլան</span><span>Ղազարյան</span>
+      <span>Ռուսլան</span><span>Գազարյան</span>
     </h1>
     <h1 v-if="isVisible === 2" class="ru">
       <span>Руслан</span><span>Газарян</span>

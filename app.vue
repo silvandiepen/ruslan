@@ -1,12 +1,12 @@
 <template>
-  <div class="container">
-    <h1 v-if="visible === 0" class="en">
+  <div class="container" @click="showVersions">
+    <h1 v-if="isVisible === 0" class="en">
       <span>Ruslan</span><span>Gazaryan</span>
     </h1>
-    <h1 v-if="visible === 1" class="hy">
+    <h1 v-if="isVisible === 1" class="hy">
       <span>Ռուսլան</span><span>Ղազարյան</span>
     </h1>
-    <h1 v-if="visible === 2" class="ru">
+    <h1 v-if="isVisible === 2" class="ru">
       <span>Руслан</span><span>Газарыан</span>
     </h1>
     <div class="socials">
@@ -100,12 +100,16 @@ useHead({
   title: "Ruslan Gazaryan",
 });
 
-const visible = ref(0);
-setInterval(() => {
-  let newValue = visible.value + 1;
-  if (newValue > 2) newValue = 0;
-  visible.value = newValue;
-}, 3000);
+const isVisible = ref(0);
+
+const showVersions = ()=>{
+  setInterval(() => {
+    let newValue = isVisible.value + 1;
+    if (newValue > 2) newValue = 0;
+    isVisible.value = newValue;
+  }, 3000);
+}
+
 </script>
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");

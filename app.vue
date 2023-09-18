@@ -7,7 +7,7 @@
       <span>Ռուսլան</span><span>Ղազարյան</span>
     </h1>
     <h1 v-if="isVisible === 2" class="ru">
-      <span>Руслан</span><span>Газарыан</span>
+      <span>Руслан</span><span>Газарян</span>
     </h1>
     <div class="socials">
       <a href="https://www.facebook.com/ruslan.gazaryan.7">
